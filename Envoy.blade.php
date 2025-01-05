@@ -2,7 +2,7 @@
 
 @setup
 echo "Connect to server";
-$repository = 'git@github.com:TouradGithub/education_system.git';
+$repository = 'git@github.com:TouradGithub/himaya.git';
 $branch = isset($branch) ? $branch : "master";
 $app_dir = "u334693063";
 
