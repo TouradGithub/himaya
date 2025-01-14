@@ -32,8 +32,6 @@ jobs:
         echo "Host 154.56.33.183
           Port 65002
           StrictHostKeyChecking no" >> ~/.ssh/config
-    - name: Check GitHub Access
-      run: ssh -T git@github.com
 
 
     - name: Set up SSH
