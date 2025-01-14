@@ -26,8 +26,8 @@
     <a class="link-background left" href="#"></a>
     <div class="link right" style="right: 0px;">
         <div class="link-box">
-            <a class="link-box-right" href="#contact" title="login to DCS System">
-                <p class="rmenu brand-logo">Login to <span>DCS System</span></p>
+            <a class="link-box-right" href="#contact" title="login to SOS System">
+                <p class="rmenu brand-logo">Login to <span>SOS System</span></p>
             </a>
             <div class="rmenu-line-box">
                 <div class="rmenu-line-mask">
@@ -62,7 +62,7 @@
                 <div class="logo">
                     <div class="brand-logo">
                         <a href="#">
-                            <span>DCS Development</span>
+                            <span>SOS Development</span>
                         </a>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
                 <div class="copyright">
-                    <p>© 2021 DCS - Made with Love in Mauritania.</p>
+                    <p>© 2021 SOS - Made with Love in Mauritania.</p>
                 </div>
             </div>
         </section>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
                         <div class="contact-item"><i class="fa fa-envelope"></i>
-                            <p><a href="mailto:web@digitalorder.net">info@dcs-sarl.net</a>
+                            <p><a href="mailto:web@digitalorder.net">info@SOS-sarl.net</a>
                             </p>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
             <div class="image-background" style="background-image:url('../themes/default/assets/img/contact.jpg');"></div>
             <!-- Header Title -->
             <div class="header-content">
-                <h2 class="text-white brand-logo">Login to <span style="color: #fff">DCS System</span></h2>
+                <h2 class="text-white brand-logo">Login to <span style="color: #fff">SOS System</span></h2>
             </div>
         </aside>
         <div class="content">
@@ -189,7 +189,7 @@
                 <div class="vertical-center">
                     <div class="panel">
                         <div class="brand-logo">
-                            <span>DCS System</span>
+                            <span>SOS System</span>
                         </div>
                         <div class="panel-content">
 

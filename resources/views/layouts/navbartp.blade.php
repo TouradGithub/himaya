@@ -2,7 +2,7 @@
     <div class="navbar-top-left">
         <div class="brand-logo">
             <a href="#">
-                <span class="system-name">DCS</span>
+                <span class="system-name">SOS</span>
             </a>
         </div>
         <div class="selectedCompany" style="float:left; font-size:16px;">Testing-Dev</div>
