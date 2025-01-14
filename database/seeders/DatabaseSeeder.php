@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use App\Models\UserType;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test Admin',
             'email' => 'admin@admin.com',
             'password' => Hash::make('password'),
-            'type_user' =>'1',
+            'type_user_id' =>'1',
         ]);
+
+        UserType::create(['name' => 'Admin']);
+        UserType::create(['name' => 'User']);
     }
 }

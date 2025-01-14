@@ -69,12 +69,16 @@
 
                         <div class="col-lg-4 col-sm-6">
                             <div class="control-group">
-                                <label for="type_user">User Type</label>
-                                <select class="form-control" name="type_user" required>
-                                    <option value="1" {{ old('type_user') == 1 ? 'selected' : '' }}>Admin</option>
-                                    <option value="0" {{ old('type_user') == 0 ? 'selected' : '' }}>User</option>
-                                </select>
-                                @error('type_user')
+                                    <label for="type_user_id">User Type</label>
+                                    <select class="form-control" name="type_user_id" required>
+                                        @foreach($typeUsers as $typeUser)
+                                            <option value="{{ $typeUser->id }}" {{ old('type_user_id') == $typeUser->id ? 'selected' : '' }}>
+                                                {{ $typeUser->name }}
+                                            </option>
+                                        @endforeach
+                                    </select>
+
+                                @error('type_user_id')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>

@@ -57,12 +57,12 @@
                                     </td>
                                     <td class="auto-width">
                                         <div class="control-group">
-                                            {{ $user->type_user }}
+                                            {{ $user->typeUser->name??'' }}
                                         </div>
                                     </td>
                                     <td class="auto-width">
                                         <div class="control-group">
-                                            {{$user->status}}
+                                            {{ $user->status == 1 ? 'Active' : 'Inactive' }}
                                         </div>
                                     </td>
                                 </tr>

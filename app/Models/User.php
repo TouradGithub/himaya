@@ -23,9 +23,13 @@ class User extends Authenticatable
         'email',
         'password',
         'phone',
-        'type_user',
+        'type_user_id',
         'status',
     ];
+    public function typeUser()
+    {
+        return $this->belongsTo(UserType::class, 'type_user_id'); // Foreign key `type_user_id` in the users table
+    }
 
     /**
      * The attributes that should be hidden for serialization.

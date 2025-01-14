@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\MOdels\User;
+use App\MOdels\UserType;
 use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
@@ -13,7 +14,9 @@ class UserController extends Controller
     }
 
     public function create(){
-        return view('admin.users.create');
+
+        $typeUsers = UserType::all();  // Get all user types
+        return view('admin.users.create', compact('typeUsers'));
     }
     public function store(Request $request)
     {
@@ -26,7 +29,7 @@ class UserController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'phone' => 'nullable|string|max:255',
-            'type_user' => 'required|string|in:1,0',
+            'type_user_id' => 'required|string|in:1,0',
             'password' => 'required|string|min:8',
         ]);
         // dd("OK");
@@ -36,7 +39,7 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,
-            'type_user' => $request->type_user,
+            'type_user_id' => $request->type_user_id,
             'status' => $request->status??0,
             'password' => Hash::make($request->password),
         ]);
